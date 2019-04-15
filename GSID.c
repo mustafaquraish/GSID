@@ -379,14 +379,14 @@ int main(int argc, char **argv) {
   cmap = (double *)colourMap->rgbdata;
   mmap = (double *)matMap->rgbdata;
   smap = (double *)shadowMap->rgbdata;
-  rgbWeight = 3.0;
-  // normalWeight = 3.0;
+  rgbWeight = 2.0;
+  normalWeight = 3.0;
   diffWeight = 1.0;
-  reflWeight = 1.0;
+  reflWeight = 2.0;
   refrWeight = 1.0;
-  shadowWeight = 1.5;
-  depthWeight = 3.0;
-  colWeight = 3.0;
+  shadowWeight = 0.5;
+  depthWeight = 2.0;
+  colWeight = 2.0;
 
   fprintf(stderr, "Precalculating transitional probabilities...\n");
   int pixels = img->sx * img->sy;
